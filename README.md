@@ -2,8 +2,8 @@
 
 A set of interfaces for making it easier to traverse recursive structures.
 
-#How to use
-Conform your class to `recursive`:
+## How to use
+Conform your class to `Recursive`:
 
 ```swift
 import Recursion
@@ -16,13 +16,16 @@ Create a recursor and pass a handler:
 ```swift
 let myObject = MyRecursiveStructure()
 let recursor = Recursor()
+
 recursor.recurse(myObject) { node, depth in
+
 	if node.attribute == myCondition {
 		//do something
 		return true //keep going
 	} else {
 		return false //stop recursing
 	}
+
 }
 ```
 
