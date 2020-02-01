@@ -32,5 +32,5 @@ recursor.recurse(myObject) { node, _ in
 Optionally limit the depth: 
 
 ```swift
-let recursor = Recursor(depthLimt: 5)
+let recursor = Recursor(depthLimit: 5)
 ```
