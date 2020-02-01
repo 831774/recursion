@@ -17,7 +17,7 @@ Create a recursor and pass a handler:
 let myObject = MyRecursiveStructure()
 let recursor = Recursor()
 
-recursor.recurse(myObject) { node, depth in
+recursor.recurse(myObject) { node, _ in
 
 	if node.attribute == myCondition {
 		//do something
