@@ -1,10 +1,6 @@
 
 import Foundation
 
-public protocol Recursive {
-	var children: [Self] { get }
-}
-
 public class Recursor {
 
 	private var depthLimit: Int?
@@ -28,4 +24,8 @@ public class Recursor {
         }
         currentDepth -= 1
 	}
+}
+
+public protocol Recursive {
+	var children: [Self] { get }
 }
